@@ -46,10 +46,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="EmY-9b-Z7t"/>
                                 </constraints>
-                                <state key="normal" title="Save Image"/>
+                                <state key="normal" title="Pick Image"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GJl-zG-wNk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="665"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,11 +67,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="uIG-kf-puY"/>
                     <connections>
+                        <outlet property="tapRecognizer" destination="l3V-be-Srz" id="3kW-x7-qtr"/>
                         <outlet property="theButton" destination="7eJ-Rp-dpO" id="JVU-x4-6xr"/>
                         <outlet property="theImage" destination="GJl-zG-wNk" id="7BJ-cE-m1L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NdF-s5-YyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="l3V-be-Srz"/>
             </objects>
             <point key="canvasLocation" x="617.39130434782612" y="-335.49107142857139"/>
         </scene>
